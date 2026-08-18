@@ -43,7 +43,13 @@ export default function TiltCard({ children, className = "", glare = true }: Til
   }
 
   return (
-    <div className={`tilt-perspective group ${className}`}>
+    <motion.div
+      className={`tilt-perspective group ${className}`}
+      initial={{ opacity: 0, y: 24 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true, margin: "-60px" }}
+      transition={{ duration: 0.5, ease: "easeOut" }}
+    >
       <motion.div
         ref={ref}
         onMouseMove={handleMouseMove}
@@ -60,6 +66,6 @@ export default function TiltCard({ children, className = "", glare = true }: Til
           />
         )}
       </motion.div>
-    </div>
+    </motion.div>
   );
 }

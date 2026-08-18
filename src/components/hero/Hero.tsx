@@ -29,7 +29,10 @@ export default function Hero() {
             Unlimited Membership Car Wash
           </p>
           <h1 className="font-display text-5xl font-extrabold leading-[1.05] text-white sm:text-6xl md:text-7xl">
-            The Shine
+            The{" "}
+            <span className="bg-gradient-to-r from-shiner-blue-light via-white to-amber-300 bg-clip-text text-transparent">
+              Shine
+            </span>
             <br />
             Starts Here.
           </h1>

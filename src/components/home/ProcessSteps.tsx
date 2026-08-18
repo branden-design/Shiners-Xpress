@@ -4,8 +4,15 @@ import { washSteps } from "@/lib/site";
 
 export default function ProcessSteps() {
   return (
-    <section className="bg-white py-24">
-      <div className="mx-auto max-w-7xl px-6">
+    <section className="relative overflow-hidden bg-white py-24">
+      <div
+        className="pointer-events-none absolute inset-0 opacity-60"
+        style={{
+          backgroundImage:
+            "radial-gradient(circle at 15% 10%, rgba(63,118,187,0.08), transparent 40%), radial-gradient(circle at 85% 90%, rgba(245,185,66,0.08), transparent 40%)",
+        }}
+      />
+      <div className="relative mx-auto max-w-7xl px-6">
         <SectionHeading
           eyebrow="How it works"
           title="Four steps to a spotless finish"

@@ -1,4 +1,5 @@
 import Hero from "@/components/hero/Hero";
+import StatsStrip from "@/components/home/StatsStrip";
 import TrustStrip from "@/components/home/TrustStrip";
 import ProcessSteps from "@/components/home/ProcessSteps";
 import MembershipTeaser from "@/components/home/MembershipTeaser";
@@ -9,6 +10,7 @@ export default function Home() {
   return (
     <>
       <Hero />
+      <StatsStrip />
       <TrustStrip />
       <ProcessSteps />
       <MembershipTeaser />
